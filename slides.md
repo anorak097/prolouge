@@ -109,9 +109,9 @@ layout: two-cols
 layoutClass: gap-x-16
 ---
 <h1 style="color: #00878f; font-size: 2.5rem; margin-bottom: 24px; font-weight: bold;">
-    LED 閃爍實作 (Ⅰ)
+    認識開發板腳位
 </h1>
-<h2>首先認識 Arduino UNO 開發版腳位
+<h2>
 腳位主要分成三類<text v-click="1">，每類中比較常用的是</text>
 <ul>
     <li>電源 (Power) <br><text style="color: #00878f; font-size: 1.5rem; font-weight: bold; background-color: #ffffff;" v-click="1">3.3V、5V、GND</text></li>
@@ -130,7 +130,31 @@ layout: two-cols
 layoutClass: gap-x-16
 ---
 <h1 style="color: #00878f; font-size: 2.5rem; margin-bottom: 24px; font-weight: bold;">
-    LED 閃爍實作 (Ⅱ)
+    認識麵包板
+</h1>
+<img style="height: 250px; width: auto;" src="./public/PXL_20260622_093721256.jpg">
+<div style="font-size: 1.8rem;" class="highlight-math">
+
+A$n$~E$n$ 有接通，F$n$~J$n$ 有接通，但 A$n$~E$n$ 不與 F$n$~J$n$ 接通 ( $n \in \mathbb{Z}^+$)
+
+</div>
+
+::right::
+
+<h1 style="color: #00878f; font-size: 2.5rem; margin-bottom: 24px; font-weight: bold;">
+    認識單色LED
+</h1>
+<img style="height: 300px; width: auto; transform: translateX(80px)" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy-FaA1v2fEJz624Vo5hN0TeDo2kjfnqUo1wWCKz-8E6wtETYKhw-V0LTaj2fWe2moyy3b0Hq8FBHrndQYGFCqgDCqxr-7h2sd-TgCQRA0bl701FH3Ae-2rz3L-pjguLgpqFqz3_J5nGjt/s800/led_blue.png">
+<h2>有長短腳<br>長腳接<text style="color: #00878f; font-size: 1.8rem; font-weight: bold; background-color: #ffffff;">高電位 (正極)</text><br>短腳接<text style="color: #00878f; font-size: 1.8rem; font-weight: bold; background-color: #ffffff;">低電位 (負極)</text>
+</h2>
+
+---
+transition: slide-left
+layout: two-cols
+layoutClass: gap-x-16
+---
+<h1 style="color: #00878f; font-size: 2.5rem; margin-bottom: 24px; font-weight: bold;">
+    LED 閃爍實作 (Ⅰ)
 </h1>
 <h2>首先是接線，如幾頁前的電路圖<text  v-click="1">，由於 Arduino 是一塊整合 MCU 的開發版，可以看成這樣</text></h2>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%" style="margin-top: -100px;">
@@ -164,7 +188,7 @@ layout: two-cols
 layoutClass: gap-x-16
 ---
 <h1 style="color: #00878f; font-size: 2.5rem; margin-bottom: 24px; font-weight: bold;">
-    LED 閃爍實作 (Ⅲ)
+    LED 閃爍實作 (Ⅱ)
 </h1>
 <h2>開啟 Arduino IDE → 檔案 → 新增 Sketch</h2>
 <br>
@@ -207,7 +231,7 @@ layout: two-cols
 layoutClass: gap-x-16
 ---
 <h1 style="color: #00878f; font-size: 2.5rem; margin-bottom: 24px; font-weight: bold;">
-    LED 閃爍實作 (Ⅳ)
+    LED 閃爍實作 (Ⅲ)
 </h1>
 <h2>存檔後，先確定是否有接到開發板</h2>
 <img src="./public/com_check.png">
